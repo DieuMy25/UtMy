@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Home Page</title>
+</head>
+<body>
+    <div th:replace="layout/layout :: layout(~{::content})">
+        <div th:fragment="content">
+            <h3>Welcome to UtMy Fashion Store!</h3>
+            <p>Discover the latest trends and styles curated just for you.</p>
+        </div>
+    </div>
+</body>
+</html>
